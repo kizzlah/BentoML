@@ -1,0 +1,18 @@
+service: "service:svc"
+description: "Iris flower classification service using scikit-learn"
+labels:
+  owner: kizzlah
+  project: iris-classification
+include:
+  - "*.py"
+  - "requirements.txt"
+python:
+  packages:
+    - numpy
+    - scikit-learn
+    - pandas
+docker:
+  distro: debian
+  python_version: "3.11"
+  system_packages:
+    - libgomp1  # Required for scikit-learn
