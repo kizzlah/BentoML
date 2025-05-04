@@ -1,0 +1,30 @@
+# Core BentoML dependencies
+bentoml>=1.4.0
+click>=7.0
+cloudpickle>=2.0.0
+numpy
+pydantic<3
+python-dateutil
+python-json-logger
+pyyaml>=5.0
+schema
+simple-di>=0.1.4
+
+# Web and API dependencies
+aiohttp
+fastapi
+starlette>=0.24.0
+uvicorn>=0.22.0
+
+# Monitoring and telemetry
+opentelemetry-api~=1.20
+opentelemetry-sdk~=1.20
+prometheus-client>=0.10.0
+
+# Development dependencies
+black
+flake8
+mypy
+pylint
+pytest
+pytest-cov
